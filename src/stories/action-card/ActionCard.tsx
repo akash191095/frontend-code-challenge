@@ -61,6 +61,9 @@ const container = css`
 
 const textStyles = css`
   grid-row: 1/3;
+  p {
+    margin: 0.5em 0;
+  }
 `;
 
 const arrowStyles = css`

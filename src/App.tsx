@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import './App.css';
 
 function App() {
   return (
@@ -13,5 +12,5 @@ function App() {
     </div>
   );
 }
-
+s;
 export default App;

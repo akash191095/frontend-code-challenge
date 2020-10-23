@@ -1,8 +1,11 @@
+@import-normalize;
+
+html {
+  font-size: 62.5%;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +13,162 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  /* Colors: */
+  --unnamed-color-555555: #555555;
+  --unnamed-color-2c2c2c: #2c2c2c;
+  --unnamed-color-262758: #262758;
+  --unnamed-color-ffffff: #ffffff;
+  --unnamed-color-858585: #858585;
+  --unnamed-color-ececec: #ececec;
+  --unnamed-color-ecf4f9: #ecf4f9;
+  --unnamed-color-f4f5f7: #f4f5f7;
+  --unnamed-color-f2f2f2: #f2f2f2;
+  --unnamed-color-a0a4df: #a0a4df;
+  --unnamed-color-3c498a: #3c498a;
+  --unnamed-color-b7b7b7: #b7b7b7;
+  --unnamed-color-6c63ff: #6c63ff;
+  --unnamed-color-9f9f9f: #9f9f9f;
+  --unnamed-color-f04d46: #f04d46;
+  --unnamed-color-f2d8d9: #f2d8d9;
+  --unnamed-color-b0b6ef: #b0b6ef;
+  --unnamed-color-fefeba: #fefeba;
+  --unnamed-color-a9a9a9: #a9a9a9;
+  --unnamed-color-fafafa: #fafafa;
+  --unnamed-color-ffe9ac: #ffe9ac;
+  --unnamed-color-edeeff: #edeeff;
+  --unnamed-color-45485b: #45485b;
+  --warning: #f2706a;
+
+  /* Font/text values */
+  --unnamed-font-family-inter: Inter;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-weight-medium: medium;
+  --unnamed-font-size-10: 1rem;
+  --unnamed-font-size-12: 1.2rem;
+  --unnamed-font-size-14: 1.4rem;
+  --unnamed-font-size-16: 1.6rem;
+  --unnamed-font-size-20: 2rem;
+  --unnamed-font-size-24: 2.4rem;
+  --unnamed-font-size-36: 3.6rem;
+  --unnamed-font-size-48: 4.8rem;
+  --unnamed-font-size-60: 6rem;
+  --unnamed-character-spacing-0: 0rem;
+  --unnamed-line-spacing-15: 1.5rem;
+  --unnamed-line-spacing-18: 1.8rem;
+  --unnamed-line-spacing-21: 2.1rem;
+  --unnamed-line-spacing-24: 2.4rem;
+  --unnamed-line-spacing-30: 3rem;
+  --unnamed-line-spacing-36: 3.6rem;
+  --unnamed-line-spacing-54: 5.4rem;
+  --unnamed-line-spacing-90: 9rem;
+  --unnamed-text-transform-titlecase: titlecase;
+  --unnamed-text-transform-uppercase: uppercase;
+}
+
+/* Character Styles */
+.unnamed-character-style-1 {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-36);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+}
+.unnamed-character-style-2 {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-14);
+  line-height: var(--unnamed-line-spacing-54);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-2c2c2c);
+}
+.unnamed-character-style-3 {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+}
+.unnamed-character-style-4 {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-36);
+  line-height: var(--unnamed-line-spacing-54);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+}
+.unnamed-character-style-5 {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-48);
+  line-height: var(--unnamed-line-spacing-90);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+}
+.unnamed-character-style-6 {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-60);
+  line-height: var(--unnamed-line-spacing-90);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+}
+.unnamed-character-style-7 {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-10);
+  line-height: var(--unnamed-line-spacing-15);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+  text-transform: var(--unnamed-text-transform-titlecase);
+}
+.unnamed-character-style-8 {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-12);
+  line-height: var(--unnamed-line-spacing-18);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+}
+.unnamed-character-style-9 {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-14);
+  line-height: var(--unnamed-line-spacing-21);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+  text-transform: var(--unnamed-text-transform-uppercase);
+}
+.unnamed-character-style-10 {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-14);
+  line-height: var(--unnamed-line-spacing-21);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+}
+.unnamed-character-style-11 {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-20);
+  line-height: var(--unnamed-line-spacing-30);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
 }

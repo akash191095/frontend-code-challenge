@@ -48,13 +48,13 @@ const container = css`
     grid-row: 1/3;
     width: 7.2rem;
     height: 6rem;
-    transition: all 0.2s;
+    box-shadow: 0px 10px 20px -9px rgba(153, 219, 255, 1);
+    transition: all 0.4s;
   }
 
   :hover {
     img {
-      width: 8rem;
-      height: 6.8rem;
+      transform: scale(1.15);
     }
   }
 `;

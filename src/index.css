@@ -16,6 +16,8 @@ code {
 }
 
 :root {
+  font-size: 62.5%;
+
   /* Colors: */
   --unnamed-color-555555: #555555;
   --unnamed-color-2c2c2c: #2c2c2c;

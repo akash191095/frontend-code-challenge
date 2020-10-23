@@ -26,6 +26,32 @@ export const textSmallSecondary = css`
   opacity: 1;
 `;
 
+export const buttonTextPrimary = css`
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-14) / var(--unnamed-line-spacing-21)
+    var(--unnamed-font-family-inter);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal bold 14px/21px Inter;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+`;
+
+export const buttonTextSecondary = css`
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-14) / var(--unnamed-line-spacing-21)
+    var(--unnamed-font-family-inter);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-262758);
+  text-align: center;
+  font: normal normal bold 14px/21px Inter;
+  letter-spacing: 0px;
+  color: #262758;
+  text-transform: uppercase;
+`;
+
 export const textArrow = css`
   width: 37px;
   height: 15px;

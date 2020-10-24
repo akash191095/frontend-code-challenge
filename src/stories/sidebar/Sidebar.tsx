@@ -60,7 +60,6 @@ const responsive = css`
   }
   @media (max-width: 760px) {
     font-size: 0.8rem;
-    position: fixed;
     left: -22.3rem;
     >img: last-of-type {
       width: 4em;
@@ -84,12 +83,13 @@ const sidebarStyles = css`
   height: 100vh;
   width: 22.3rem;
   padding-top: 4em;
+  position: fixed;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 
   > div:nth-of-type(1) {
     margin-left: 3.5em;
@@ -121,9 +121,7 @@ const sidebarStyles = css`
     margin-top: 0;
     padding: 0;
     > div {
-      :hover,
-      :active,
-      :focus {
+      :hover {
         background: rgba(242, 242, 242, 0.1) 0% 0% no-repeat padding-box;
         border-radius: 0px 23px 0px 24px;
       }
@@ -138,6 +136,7 @@ const sidebarStyles = css`
         align-items: center;
         padding-left: 3.5em;
         height: 4.7rem;
+        text-decoration: none;
       }
     }
   }
@@ -150,7 +149,7 @@ const sidebarStyles = css`
     margin: 0 2.5em;
     // first half
     > div:nth-of-type(1) {
-      padding: 0.5em 2.5em;
+      padding: 1.5em 2.5em;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       display: flex;
       justify-content: space-between;
@@ -158,12 +157,16 @@ const sidebarStyles = css`
       // arrow
       p > a {
         color: white;
+        text-decoration: none;
       }
     }
 
     // second half of my mentor card
     > div:nth-of-type(2) {
-      padding: 0.5em 2.5em 2.5em 2.5em;
+      padding: 1.5em 2.5em 2.5em 2.5em;
+      > p {
+        padding-bottom: 1.5em;
+      }
       //icons
       > div {
         display: flex;

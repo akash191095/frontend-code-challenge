@@ -1,16 +1,13 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
+import Dashboard from './pages/Dashboard';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div
-      css={css`
-        color: red;
-      `}
-    >
-      <h1>Hello from App.js</h1>
-    </div>
+    <main>
+      <Dashboard />
+    </main>
   );
-}
-s;
+};
+
 export default App;

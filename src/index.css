@@ -90,7 +90,7 @@ code {
 }
 
 /* Character Styles */
-.unnamed-character-style-1 {
+.text-24-bold-none {
   font-family: var(--unnamed-font-family-inter);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-bold);
@@ -117,7 +117,7 @@ code {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-212121);
 }
-.unnamed-character-style-4 {
+.text-36-normal-none {
   font-family: var(--unnamed-font-family-inter);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -158,6 +158,15 @@ code {
   font-family: var(--unnamed-font-family-inter);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-12);
+  line-height: var(--unnamed-line-spacing-18);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+}
+.text-12-normal-none {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
   font-size: var(--unnamed-font-size-12);
   line-height: var(--unnamed-line-spacing-18);
   letter-spacing: var(--unnamed-character-spacing-0);
@@ -211,10 +220,10 @@ code {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-212121);
 }
-.unnamed-character-style-11 {
+.text-20-bold-none {
   font-family: var(--unnamed-font-family-inter);
   font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-medium);
+  font-weight: var(--unnamed-font-weight-bold);
   font-size: var(--unnamed-font-size-20);
   line-height: var(--unnamed-line-spacing-30);
   letter-spacing: var(--unnamed-character-spacing-0);

@@ -6,6 +6,7 @@ html {
 }
 body {
   margin: 0;
+  padding: 0 !important;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,6 +15,16 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 code {
@@ -143,11 +154,40 @@ code {
   color: var(--unnamed-color-212121);
   text-transform: var(--unnamed-text-transform-titlecase);
 }
-.unnamed-character-style-8 {
+.text-12-medium-none {
   font-family: var(--unnamed-font-family-inter);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-medium);
   font-size: var(--unnamed-font-size-12);
+  line-height: var(--unnamed-line-spacing-18);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+}
+.text-12-bold-titlecase {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-12);
+  line-height: var(--unnamed-line-spacing-18);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+  text-transform: var(--unnamed-text-transform-titlecase);
+}
+.text-12-bold-uppercase {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-12);
+  line-height: var(--unnamed-line-spacing-18);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-212121);
+  text-transform: var(--unnamed-text-transform-uppercase);
+}
+.text-14-bold-none {
+  font-family: var(--unnamed-font-family-inter);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-14);
   line-height: var(--unnamed-line-spacing-18);
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-212121);
@@ -162,7 +202,7 @@ code {
   color: var(--unnamed-color-212121);
   text-transform: var(--unnamed-text-transform-uppercase);
 }
-.unnamed-character-style-10 {
+.text-14-medium-none {
   font-family: var(--unnamed-font-family-inter);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-medium);

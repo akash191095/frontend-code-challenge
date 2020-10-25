@@ -29,11 +29,11 @@ export interface OfferCardProps {
   /**
    * On click action
    */
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const responsive = css`
-  @media (max-width: 900px) {
+  @media (max-width: 970px) {
     > div > h5,
     > div > h6 {
       font-size: 1.3em !important;
@@ -41,7 +41,7 @@ const responsive = css`
     font-size: 0.8em;
   }
 
-  @media (max-width: 765px) {
+  @media (max-width: 850px) {
     display: grid;
     grid-template-columns: 0.1fr repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -68,7 +68,7 @@ const responsive = css`
     }
   }
 
-  @media (max-width: 350px) {
+  @media (max-width: 410px) {
     div:nth-of-type(4) {
       font-size: 0.9em;
     }
@@ -88,7 +88,7 @@ const container = css`
   }
 
   display: grid;
-  grid-template-columns: 1.2fr 5fr repeat(2, 3fr);
+  grid-template-columns: 1fr 5fr repeat(2, 3fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -96,6 +96,8 @@ const container = css`
   justify-items: center;
   height: 9.3rem;
   width: 100%;
+  padding-left: 2em;
+  padding-right: 4em;
 
   img {
     width: 4.8em;
@@ -103,12 +105,12 @@ const container = css`
     background: #f4f4fa 0% 0% no-repeat padding-box;
     border-radius: 50%;
     padding: 1em;
-    font-size: 0.7em;
+    margin: 1em;
   }
 
   // name and description
   div:nth-of-type(2) {
-    width: 100%;
+    justify-self: flex-start;
     h5 {
       ${textMediumPrimary}
       margin-bottom: 4px;
@@ -134,6 +136,11 @@ const container = css`
       line-height: 0;
     }
   }
+
+  div:nth-of-type(4) {
+    justify-self: flex-end;
+  }
+
   // Responsive
   ${responsive}
 `;
@@ -158,7 +165,7 @@ export const OfferCard: React.FC<OfferCardProps> = ({
       </div>
       <div>
         <h6>Estimated Price</h6>
-        <h5>{`$${price}/${durationMonths}mo.`}</h5>
+        <h5>{`$${price.toLocaleString()}/${durationMonths}mo.`}</h5>
       </div>
       <div>
         <Button label="Order Now" primary={false} />

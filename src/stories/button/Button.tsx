@@ -31,7 +31,6 @@ const buttonStyles = css`
   border-radius: 1.78em;
   height: 3.5em;
   border: none;
-
   > p {
     padding: 0 2em;
     margin: 0;

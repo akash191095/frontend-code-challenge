@@ -5,7 +5,71 @@ import { Button } from '../stories/button/Button';
 import { Sidebar } from '../stories/sidebar/Sidebar';
 import { WithBackground } from '../stories/with-background/WithBackground';
 import iconForm from '../stories/assets/actionCardIcon/icon@2x.png';
+import icon2 from '../stories/assets/actionCardIcon/icon-2@2x.png';
+import icon3 from '../stories/assets/actionCardIcon/icon-3@2x.png';
 import { OfferCard } from '../stories/offer-card/OfferCard';
+
+const responsive = css`
+  @media (max-width: 1330px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 0.2fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-size: 0.9rem;
+
+    > div:nth-of-type(1) {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    > div:nth-of-type(2) {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    > div:nth-of-type(3) {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    > div:nth-of-type(4) {
+      grid-area: 4 / 1 / 5 / 2;
+    }
+    > div:nth-of-type(5) {
+      grid-area: 5 / 1 / 6 / 2;
+    }
+    > div:nth-of-type(6) {
+      grid-area: 6 / 1 / 7 / 2;
+    }
+  }
+
+  @media (max-width: 760px) {
+    margin-left: 0rem;
+
+    > div:nth-of-type(1) {
+      font-size: 0.6rem;
+      h3 {
+        font-size: 1.8rem;
+      }
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+    > div:nth-of-type(6) {
+      > h3 {
+        font-size: 2em;
+      }
+      > p {
+        font-size: 1.3em;
+      }
+    }
+
+    > div:nth-of-type(3) {
+      justify-self: center;
+    }
+    > div:nth-of-type(4) {
+      justify-self: center;
+    }
+    > div:nth-of-type(5) {
+      justify-self: center;
+    }
+  }
+`;
 
 const DashboardStyles = css`
   display: grid;
@@ -69,6 +133,9 @@ const DashboardStyles = css`
       }
     }
   }
+
+  // Responsive
+  ${responsive}
 `;
 
 const Dashboard: React.FC = () => {
@@ -97,14 +164,14 @@ const Dashboard: React.FC = () => {
           <ActionCard
             textPrimary="Find your perfect gym"
             textSecondary="Easily find your perfect gym club and join the club instantly."
-            icon={iconForm}
+            icon={icon2}
           />
         </div>
         <div>
           <ActionCard
             textPrimary="Track your progress"
             textSecondary="Analyze and plan for your tasks and progress."
-            icon={iconForm}
+            icon={icon3}
           />
         </div>
         <div>

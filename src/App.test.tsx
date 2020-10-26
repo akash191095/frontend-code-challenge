@@ -1,9 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import Dashboard from './pages/Dashboard';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders dashboard', async () => {
+  const username = 'akash agarwal';
+  const { findByText } = render(<Dashboard username={username} />);
+  const greeting = await findByText(/akash,/i);
+  const heading = await findByText(/What do you want to do today?/i);
+  expect(greeting).toBeInTheDocument();
+  expect(heading).toBeInTheDocument();
 });

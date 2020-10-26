@@ -33,6 +33,9 @@ const responsive = css`
       }
     }
   }
+  @media (max-width: 650px) {
+    margin-left: 1em;
+  }
 `;
 const formStyles = css`
   input {
@@ -47,7 +50,7 @@ const formStyles = css`
   grid-template-rows: 1fr 0.3fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-
+  margin-left: 5em;
   > div:nth-of-type(1) {
     grid-area: 1 / 2 / 3 / 3;
     padding: 5em;
@@ -101,6 +104,7 @@ const dropdownStyles = css`
 `;
 
 const headingStyles = css`
+  margin-left: 5em;
   > h3 {
     font: var(--unnamed-font-style-normal) normal
       var(--unnamed-font-weight-bold) var(--unnamed-font-size-20) /

@@ -2,13 +2,10 @@
 import { jsx, css } from '@emotion/core';
 import { ActionCard } from '../stories/action-card/ActionCard';
 import { Button } from '../stories/button/Button';
-import { Sidebar } from '../stories/sidebar/Sidebar';
-import { WithBackground } from '../stories/with-background/WithBackground';
 import iconForm from '../stories/assets/actionCardIcon/icon@2x.png';
 import icon2 from '../stories/assets/actionCardIcon/icon-2@2x.png';
 import icon3 from '../stories/assets/actionCardIcon/icon-3@2x.png';
 import { OfferCard } from '../stories/offer-card/OfferCard';
-import ReferralForm from '../components/ReferralForm';
 
 const responsive = css`
   @media (max-width: 1330px) {
@@ -100,7 +97,6 @@ const DashboardStyles = css`
   grid-template-rows: repeat(2, 0.5fr) 1.5fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin-left: 23.3rem;
   padding: 6em 5em;
 
   > div:nth-of-type(1) {
@@ -165,73 +161,70 @@ const DashboardStyles = css`
   ${responsive}
 `;
 
-const Dashboard: React.FC = () => {
-  const username = 'Jimmy Hendrix';
+interface DashboardProps {
+  username: string;
+}
+
+const Dashboard: React.FC<DashboardProps> = ({ username }) => {
   return (
-    <WithBackground>
-      <Sidebar username={username} profileLink="/me" />
-      <div css={DashboardStyles}>
+    <div css={DashboardStyles}>
+      <div>
+        <h3 className="text-24-bold-none">
+          Hello <span>{`${username.split(' ')[0]},`}</span>
+        </h3>
+        <h4 className="text-36-normal-none">What do you want to do today?</h4>
+      </div>
+      <div>
+        <Button label="FIND A GYM CLUB" primary />
+      </div>
+      <div>
+        <ActionCard
+          textPrimary="Fill up the form"
+          textSecondary="Fill in your basic information to join the Gym Club."
+          icon={iconForm}
+        />
+      </div>
+      <div>
+        <ActionCard
+          textPrimary="Find your perfect gym"
+          textSecondary="Easily find your perfect gym club and join the club instantly."
+          icon={icon2}
+        />
+      </div>
+      <div>
+        <ActionCard
+          textPrimary="Track your progress"
+          textSecondary="Analyze and plan for your tasks and progress."
+          icon={icon3}
+        />
+      </div>
+      <div>
+        <h3 className="text-20-bold-none">Recommended Tour Packages</h3>
+        <p className=".text-12-normal-none">
+          These recommendations are based on your profile information
+        </p>
         <div>
-          <h3 className="text-24-bold-none">
-            Hello <span>{`${username.split(' ')[0]},`}</span>
-          </h3>
-          <h4 className="text-36-normal-none">What do you want to do today?</h4>
-        </div>
-        <div>
-          <Button label="FIND A GYM CLUB" primary />
-        </div>
-        <div>
-          <ActionCard
-            textPrimary="Fill up the form"
-            textSecondary="Fill in your basic information to join the Gym Club."
-            icon={iconForm}
+          <OfferCard
+            name="Pilates"
+            description="Developed first by Joseph Pilates, after whom the technique is name…"
+            price={4220}
+            durationMonths={6}
           />
-        </div>
-        <div>
-          <ActionCard
-            textPrimary="Find your perfect gym"
-            textSecondary="Easily find your perfect gym club and join the club instantly."
-            icon={icon2}
+          <OfferCard
+            name="Yoga & Meditation"
+            description="Mantra has always believed in a Mind & Body approach which means…"
+            price={4220}
+            durationMonths={6}
           />
-        </div>
-        <div>
-          <ActionCard
-            textPrimary="Track your progress"
-            textSecondary="Analyze and plan for your tasks and progress."
-            icon={icon3}
+          <OfferCard
+            name="Kettlebell"
+            description="Kettlebell, the exercise routine involving a kettle shaped weight originat…"
+            price={4220}
+            durationMonths={6}
           />
-        </div>
-        <div>
-          <h3 className="text-20-bold-none">Recommended Tour Packages</h3>
-          <p className=".text-12-normal-none">
-            These recommendations are based on your profile information
-          </p>
-          <div>
-            <OfferCard
-              name="Pilates"
-              description="Developed first by Joseph Pilates, after whom the technique is name…"
-              price={4220}
-              durationMonths={6}
-            />
-            <OfferCard
-              name="Yoga & Meditation"
-              description="Mantra has always believed in a Mind & Body approach which means…"
-              price={4220}
-              durationMonths={6}
-            />
-            <OfferCard
-              name="Kettlebell"
-              description="Kettlebell, the exercise routine involving a kettle shaped weight originat…"
-              price={4220}
-              durationMonths={6}
-            />
-          </div>
-        </div>
-        <div>
-          <ReferralForm />
         </div>
       </div>
-    </WithBackground>
+    </div>
   );
 };
 

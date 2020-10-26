@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea15493750d12f2ec2d2b75fdc13f8d8",
+    "revision": "97667504ec1074a474e79cec6cb45ae2",
     "url": "/frontend-code-challenge/index.html"
   },
   {
-    "revision": "56812823d1a791d4e4cc",
+    "revision": "d5f4b3c8accd70d1d489",
     "url": "/frontend-code-challenge/static/css/main.33922e95.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/frontend-code-challenge/static/js/2.552e94d6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "56812823d1a791d4e4cc",
-    "url": "/frontend-code-challenge/static/js/main.7ef845bd.chunk.js"
+    "revision": "d5f4b3c8accd70d1d489",
+    "url": "/frontend-code-challenge/static/js/main.ea95c25d.chunk.js"
   },
   {
     "revision": "991097194609c28dad28",

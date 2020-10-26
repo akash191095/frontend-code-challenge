@@ -8,6 +8,7 @@ import iconForm from '../stories/assets/actionCardIcon/icon@2x.png';
 import icon2 from '../stories/assets/actionCardIcon/icon-2@2x.png';
 import icon3 from '../stories/assets/actionCardIcon/icon-3@2x.png';
 import { OfferCard } from '../stories/offer-card/OfferCard';
+import ReferralForm from '../components/ReferralForm';
 
 const responsive = css`
   @media (max-width: 1330px) {
@@ -155,6 +156,10 @@ const DashboardStyles = css`
       }
     }
   }
+  > div:nth-of-type(7) {
+    margin: 5em 0;
+    grid-column: 1/-1;
+  }
 
   // Responsive
   ${responsive}
@@ -221,6 +226,9 @@ const Dashboard: React.FC = () => {
               durationMonths={6}
             />
           </div>
+        </div>
+        <div>
+          <ReferralForm />
         </div>
       </div>
     </WithBackground>

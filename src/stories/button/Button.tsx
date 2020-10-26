@@ -4,8 +4,9 @@ import {
   buttonTextPrimary,
   buttonTextSecondary,
 } from '../../styles/text-styles';
+import { ButtonHTMLAttributes } from 'react';
 
-export interface ButtonProps {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /**
    * Is this the principal call to action on the page?
    */
@@ -83,7 +84,7 @@ export const Button: React.FC<ButtonProps> = ({
     ${mode}
   `;
   return (
-    <button type="button" {...props} css={styles}>
+    <button {...props} css={styles}>
       <p>{label}</p>
     </button>
   );

@@ -69,6 +69,28 @@ const responsive = css`
       justify-self: center;
     }
   }
+
+  @media (max-width: 450px) {
+    padding: 6em 1.5em;
+  }
+
+  // text size
+  @media (max-width: 450px) {
+    > div:nth-of-type(1) {
+      h3 {
+        font-size: 5em;
+      }
+      h4 {
+        font-size: 3.5em;
+      }
+    }
+    > div:nth-of-type(6) {
+      > p {
+        font-size: 1.5em;
+        margin-top: 0;
+      }
+    }
+  }
 `;
 
 const DashboardStyles = css`

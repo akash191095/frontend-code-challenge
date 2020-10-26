@@ -84,6 +84,7 @@ const sidebarStyles = css`
   width: 22.3rem;
   padding-top: 4em;
   position: fixed;
+  z-index: 20;
 
   display: flex;
   flex-direction: column;

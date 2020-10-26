@@ -68,6 +68,14 @@ const textStyles = css`
   p {
     margin: 0.5em 0;
   }
+  @media (max-width: 450px) {
+    p:nth-of-type(1) {
+      font-size: 1.2rem;
+    }
+    p:nth-of-type(2) {
+      font-size: 1.1rem;
+    }
+  }
 `;
 
 const arrowStyles = css`

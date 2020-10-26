@@ -36,7 +36,7 @@ const responsive = css`
   @media (max-width: 970px) {
     > div > h5,
     > div > h6 {
-      font-size: 1.3em !important;
+      font-size: 1.3em;
     }
     font-size: 0.8em;
   }
@@ -68,9 +68,30 @@ const responsive = css`
     }
   }
 
-  @media (max-width: 410px) {
+  // text size
+  @media (max-width: 450px) {
+    img {
+      display: none;
+    }
+    // name and description
+    div:nth-of-type(2) {
+      h5 {
+        font-size: 200% !important;
+      }
+      h6 {
+        font-size: 180% !important;
+      }
+    }
+    // estimated price
+    div:nth-of-type(3) {
+      h5,
+      h6 {
+        font-size: 160% !important;
+      }
+    }
+    // button
     div:nth-of-type(4) {
-      font-size: 0.9em;
+      font-size: 110% !important;
     }
   }
 `;
@@ -117,6 +138,7 @@ const container = css`
     }
     h6 {
       ${textMediumSecondary}
+      font-size: 1.2rem;
     }
   }
 

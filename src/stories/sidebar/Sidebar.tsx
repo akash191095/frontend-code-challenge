@@ -7,6 +7,7 @@ import call from '../assets/call.svg';
 import mail from '../assets/mail.svg';
 import chat from '../assets/chat.svg';
 import menuIcon from '../assets/hamburger_icon.png';
+import { spawn } from 'child_process';
 
 interface NavItem {
   id: string;
@@ -131,6 +132,13 @@ const sidebarStyles = css`
         list-style: none;
         color: white;
       }
+      > a > li > span {
+        color: #2c2c2c;
+        background: #ffc933 0% 0% no-repeat padding-box;
+        border-radius: 9px;
+        padding: 0.1em 1em;
+        margin-left: 0.5em;
+      }
       > a {
         display: flex;
         justify-content: flex-start;
@@ -209,11 +217,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </a>
       </div>
       <ul>
-        {navItems.map(({ id, name, link }) => {
+        {navItems.map(({ id, name, link, notificationCount }) => {
           return (
             <div key={id}>
               <a className="text-12-bold-titlecase" href={link}>
-                <li>{name}</li>
+                <li>
+                  {name}{' '}
+                  {notificationCount > 0 && <span>{notificationCount}</span>}
+                </li>
               </a>
             </div>
           );

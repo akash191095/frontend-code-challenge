@@ -57,6 +57,10 @@ const container = css`
       transform: scale(1.15);
     }
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 const textStyles = css`
@@ -67,7 +71,6 @@ const textStyles = css`
 `;
 
 const arrowStyles = css`
-  grid-row: 1/3;
   font-size: 1.2em;
   color: black;
 `;

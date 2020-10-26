@@ -1,29 +1,31 @@
 {
   "files": {
     "main.css": "/frontend-code-challenge/static/css/main.33922e95.chunk.css",
-    "main.js": "/frontend-code-challenge/static/js/main.1a0741db.chunk.js",
-    "main.js.map": "/frontend-code-challenge/static/js/main.1a0741db.chunk.js.map",
+    "main.js": "/frontend-code-challenge/static/js/main.fb9eeefe.chunk.js",
+    "main.js.map": "/frontend-code-challenge/static/js/main.fb9eeefe.chunk.js.map",
     "runtime-main.js": "/frontend-code-challenge/static/js/runtime-main.cc78ad09.js",
     "runtime-main.js.map": "/frontend-code-challenge/static/js/runtime-main.cc78ad09.js.map",
-    "static/js/2.552e94d6.chunk.js": "/frontend-code-challenge/static/js/2.552e94d6.chunk.js",
-    "static/js/2.552e94d6.chunk.js.map": "/frontend-code-challenge/static/js/2.552e94d6.chunk.js.map",
+    "static/js/2.8bb80348.chunk.js": "/frontend-code-challenge/static/js/2.8bb80348.chunk.js",
+    "static/js/2.8bb80348.chunk.js.map": "/frontend-code-challenge/static/js/2.8bb80348.chunk.js.map",
     "index.html": "/frontend-code-challenge/index.html",
-    "precache-manifest.1447f85a21f32e90ef761ea3f3d6cf23.js": "/frontend-code-challenge/precache-manifest.1447f85a21f32e90ef761ea3f3d6cf23.js",
+    "precache-manifest.4a0910d71627a802fe074e218e5be67f.js": "/frontend-code-challenge/precache-manifest.4a0910d71627a802fe074e218e5be67f.js",
     "service-worker.js": "/frontend-code-challenge/service-worker.js",
     "static/css/main.33922e95.chunk.css.map": "/frontend-code-challenge/static/css/main.33922e95.chunk.css.map",
-    "static/js/2.552e94d6.chunk.js.LICENSE.txt": "/frontend-code-challenge/static/js/2.552e94d6.chunk.js.LICENSE.txt",
+    "static/js/2.8bb80348.chunk.js.LICENSE.txt": "/frontend-code-challenge/static/js/2.8bb80348.chunk.js.LICENSE.txt",
     "static/media/avatar@2x.png": "/frontend-code-challenge/static/media/avatar@2x.2156bd2b.png",
     "static/media/call.svg": "/frontend-code-challenge/static/media/call.12da7270.svg",
+    "static/media/caret.svg": "/frontend-code-challenge/static/media/caret.58b50503.svg",
     "static/media/chat.svg": "/frontend-code-challenge/static/media/chat.6a8e477f.svg",
     "static/media/hamburger_icon.png": "/frontend-code-challenge/static/media/hamburger_icon.b5098bdc.png",
     "static/media/icon-3@2x.png": "/frontend-code-challenge/static/media/icon-3@2x.7383a7dc.png",
+    "static/media/illustration.svg": "/frontend-code-challenge/static/media/illustration.9616698c.svg",
     "static/media/mail.svg": "/frontend-code-challenge/static/media/mail.6e0a0c28.svg",
     "static/media/plane.svg": "/frontend-code-challenge/static/media/plane.21caefcb.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cc78ad09.js",
-    "static/js/2.552e94d6.chunk.js",
+    "static/js/2.8bb80348.chunk.js",
     "static/css/main.33922e95.chunk.css",
-    "static/js/main.1a0741db.chunk.js"
+    "static/js/main.fb9eeefe.chunk.js"
   ]
 }

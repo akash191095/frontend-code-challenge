@@ -11,7 +11,8 @@ import caretIcon from '../stories/assets/caret.svg';
 const genderOptions = ['Male', 'Female', 'Other', "Don't Specify"];
 
 const responsive = css`
-  @media (max-width: 990px) {
+  @media (max-width: 1100px) {
+    margin-right: 5em;
     > div:nth-of-type(1) {
       display: none;
     }
@@ -20,6 +21,13 @@ const responsive = css`
     }
     > div:nth-of-type(3) {
       grid-column: 1/-1;
+    }
+  }
+  @media (max-width: 850px) {
+    > form {
+      > div:first-of-type {
+        grid-template-columns: 1fr;
+      }
     }
   }
   @media (max-width: 650px) {
@@ -35,21 +43,21 @@ const responsive = css`
   }
   @media (max-width: 650px) {
     margin-left: 1em;
+    margin-right: 1em;
   }
 `;
 const formStyles = css`
   input {
     ${inputStyled}
-    margin: 0.5em 0;
-    margin-right: 0.8em;
     height: 49px;
   }
 
   display: grid;
   grid-template-columns: 1fr 0.4fr;
-  grid-template-rows: 1fr 0.3fr;
+  grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  margin: 5em 0;
   margin-left: 5em;
   > div:nth-of-type(1) {
     grid-area: 1 / 2 / 3 / 3;
@@ -65,14 +73,24 @@ const formStyles = css`
   }
   > form {
     grid-area: 1 / 1 / 2 / 2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+
+    > hr {
+      border-top: 0.5px solid #9f9f9f;
+      opacity: 0.4;
+      margin-top: 5em;
+      margin-bottom: 3em;
+    }
+
+    // inputs container
+    > div:first-of-type {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-gap: 1em;
+    }
 
     // submit container
     > div:last-of-type {
-      grid-area: 2 / 1 / 3 / 2;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -191,66 +209,69 @@ const ReferralForm: React.FC = () => {
         </div>
         <p className="text-12-normal-none">{errorMessage}</p>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <input
-            type="text"
-            placeholder="Name"
-            name="Name"
-            ref={register({ required: true })}
-          />
-          <input
-            type="text"
-            placeholder="Email"
-            name="Email"
-            ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-          />
-          <input
-            type="tel"
-            placeholder="Phone number"
-            name="Phone number"
-            ref={register({ maxLength: 12 })}
-          />
-          <div css={dropdownStyles}>
-            <div>
-              {isOpen ? (
-                <div>
-                  <label {...getLabelProps()}>Gender</label>
-                  <p>Select Item...</p>
-                </div>
-              ) : (
-                <label {...getLabelProps()}>{selectedItem || 'Gender'}</label>
-              )}
-              <button type="button" {...getToggleButtonProps()}></button>
-              <img src={caretIcon} alt="down arrow" />
+          <div>
+            <input
+              type="text"
+              placeholder="Name"
+              name="Name"
+              ref={register({ required: true })}
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              name="Email"
+              ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+            />
+            <input
+              type="tel"
+              placeholder="Phone number"
+              name="Phone number"
+              ref={register({ maxLength: 12 })}
+            />
+            <div css={dropdownStyles}>
+              <div>
+                {isOpen ? (
+                  <div>
+                    <label {...getLabelProps()}>Gender</label>
+                    <p>Select Item...</p>
+                  </div>
+                ) : (
+                  <label {...getLabelProps()}>{selectedItem || 'Gender'}</label>
+                )}
+                <button type="button" {...getToggleButtonProps()}></button>
+                <img src={caretIcon} alt="down arrow" />
+              </div>
+              <ul {...getMenuProps()}>
+                {isOpen &&
+                  genderOptions.map((item, index) => (
+                    <li
+                      style={
+                        highlightedIndex === index
+                          ? { backgroundColor: '#bde4ff' }
+                          : {}
+                      }
+                      key={`${item}${index}`}
+                      {...getItemProps({ item, index })}
+                    >
+                      {item}
+                    </li>
+                  ))}
+              </ul>
             </div>
-            <ul {...getMenuProps()}>
-              {isOpen &&
-                genderOptions.map((item, index) => (
-                  <li
-                    style={
-                      highlightedIndex === index
-                        ? { backgroundColor: '#bde4ff' }
-                        : {}
-                    }
-                    key={`${item}${index}`}
-                    {...getItemProps({ item, index })}
-                  >
-                    {item}
-                  </li>
-                ))}
-            </ul>
+            <input
+              type="text"
+              placeholder="Address"
+              name="Address"
+              ref={register}
+            />
+            <input
+              type="text"
+              placeholder="Apt/Suite/Other"
+              name="Apt/Suite/Other"
+              ref={register}
+            />
           </div>
-          <input
-            type="text"
-            placeholder="Address"
-            name="Address"
-            ref={register}
-          />
-          <input
-            type="text"
-            placeholder="Apt/Suite/Other"
-            name="Apt/Suite/Other"
-            ref={register}
-          />
+          <hr />
           <div>
             <p>
               By clicking on Refer you agree to all the terms and conditions.

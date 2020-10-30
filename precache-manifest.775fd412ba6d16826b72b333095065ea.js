@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "30fb59b78cfbbe38ea10a59c3531d3b8",
+    "revision": "47d6b174bd5f7fc03fc5a2b2d1ba9ba9",
     "url": "/frontend-code-challenge/index.html"
   },
   {
-    "revision": "f8b1ed9cc33beea645af",
+    "revision": "5e3801fe366ff93ed29b",
     "url": "/frontend-code-challenge/static/css/main.33922e95.chunk.css"
   },
   {
-    "revision": "fece9b9469f26bca7686",
-    "url": "/frontend-code-challenge/static/js/2.8bb80348.chunk.js"
+    "revision": "fa144b76ce16e109bce6",
+    "url": "/frontend-code-challenge/static/js/2.9501ac09.chunk.js"
   },
   {
     "revision": "8da57ccee1690fd1d0790b5fcb8f1bad",
-    "url": "/frontend-code-challenge/static/js/2.8bb80348.chunk.js.LICENSE.txt"
+    "url": "/frontend-code-challenge/static/js/2.9501ac09.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f8b1ed9cc33beea645af",
-    "url": "/frontend-code-challenge/static/js/main.fb9eeefe.chunk.js"
+    "revision": "5e3801fe366ff93ed29b",
+    "url": "/frontend-code-challenge/static/js/main.b250a349.chunk.js"
   },
   {
     "revision": "991097194609c28dad28",

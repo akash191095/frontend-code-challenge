@@ -7,7 +7,6 @@ import call from '../assets/call.svg';
 import mail from '../assets/mail.svg';
 import chat from '../assets/chat.svg';
 import menuIcon from '../assets/hamburger_icon.png';
-import { spawn } from 'child_process';
 
 interface NavItem {
   id: string;

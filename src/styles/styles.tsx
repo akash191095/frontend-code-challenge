@@ -55,7 +55,7 @@ export const dropdownStyled = css`
       top: 50%;
       left: 1em;
       transform: translate(0, -50%);
-      
+
       font: normal normal medium 14px/17px Inter;
       font-size: 1.4rem;
       font-weight: bold;
@@ -63,7 +63,7 @@ export const dropdownStyled = css`
       opacity: 1;
     }
 
-    > div { 
+    > div {
       > label {
         position: absolute;
         font-size: 1rem;
@@ -80,7 +80,7 @@ export const dropdownStyled = css`
         font-weight: medium;
       }
     }
-    
+
     > img {
       cursor: pointer;
       position: absolute;
@@ -95,6 +95,7 @@ export const dropdownStyled = css`
     list-style: none;
     padding: 0;
     outline: none;
+    width: 100%;
     > li {
       font: normal normal medium 14px/17px Inter;
       font-size: 1.4rem;
@@ -106,8 +107,12 @@ export const dropdownStyled = css`
       width: 328px;
       line-height: 3em;
       padding: 0 1em;
+      width: 100%;
     }
-    > li: first-of-type, > li:last-of-type {
+    >li: first-of-type {
+      border-radius: 4px 4px 0px 0px;
+    }
+    > li:last-of-type {
       border-radius: 0px 0px 4px 4px;
     }
   }

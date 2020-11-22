@@ -1,44 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project is hosted here: [https://akash191095.github.io/frontend-code-challenge/](https://akash191095.github.io/frontend-code-challenge/)
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+# Sage Frontend Code Challenge
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Hi, here you'll find all the details of the code challenge. Please fork this repo and complete the code challenge. [Deploy it anywhere](https://create-react-app.dev/docs/deployment/#github-pages) and send your demo link to the Sage hiring team. Your demo should be linked to your fork which will be reviewed by Sage's Frontend Team.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+_Our requirements of technology to use for the challenge is very specific. If you do not have experience with specific technologies, you are expected to learn them_
 
-### `npm test`
+## What are we looking for
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The challenge will be evaluated on the basis of
 
-### `npm run build`
+- **Design**: Pixel perfect design implementation
+- **Creativity**: Creative touches from you for better user experience
+- **Clarify**: Readable and maintainable code without ambiguities
+- **Defensive**: Handling exceptions and edge cases
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Requirements
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Please find the [design here](https://xd.adobe.com/view/27385d24-e59b-4789-8c1c-433d4c066e47-726b/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Above design has to be implemented in [React](https://github.com/facebook/react) [(with Hooks)](https://reactjs.org/docs/hooks-intro.html) and [Typescript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+- Styled with [Emotion](https://github.com/emotion-js/emotion)
+- Form has to be implemented in [React Hook Form](https://github.com/react-hook-form/react-hook-form)
+- Dropdown has to be implemented with [Downshift](https://github.com/downshift-js/downshift)
+- [Commit messages](https://www.conventionalcommits.org/) should be granular and contextual
 
-### `npm run eject`
+## Extra Points
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Some aspects that are not required but encouraged
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [ ] [Component Documentation with Storybook](https://github.com/storybookjs/storybook/tree/next/app/react)
+- [ ] [Testing implementation details](https://github.com/testing-library/react-testing-library)
+- [ ] [Responsive Design implementation](https://emotion.sh/docs/media-queries)
+- [ ] Implementing everything with no dependency on any UI libs like Bootstrap, Material UI or Ant Design or such.
+- [ ] Fairly commented code
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Tips
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+We expect the code to be written with focus on readability and maintainability.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [ ] [Clean Code](https://github.com/ryanmcdermott/clean-code-javascript)
+- [ ] [React Typescript Cheatsheet](https://github.com/typescript-cheatsheets/react)

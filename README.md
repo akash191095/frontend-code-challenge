@@ -1,4 +1,6 @@
-## Project is hosted here: [https://akash191095.github.io/frontend-code-challenge/](https://akash191095.github.io/frontend-code-challenge/)
+## Project is hosted here:
+
+[https://akash191095.github.io/frontend-code-challenge/](https://akash191095.github.io/frontend-code-challenge/)
 
 <br>
 
